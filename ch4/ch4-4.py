@@ -48,6 +48,8 @@ iter_per_epoch = max(TRAIN_SIZE / BATCH_SIZE, 1)
 
 network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
 
+
+# 확률적 경사 하강법(SGD) - 미니배치를 통해 무작위 선정 후 경사 하강법 적용
 for i in range(ITERS_NUM):
     # 미니배치 획득
     batch_mask = np.random.choice(TRAIN_SIZE, BATCH_SIZE)

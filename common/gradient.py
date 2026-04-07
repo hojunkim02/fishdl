@@ -43,7 +43,7 @@ def numerical_gradient(f, x):
         tmp_val = x[idx]
 
         x[idx] = tmp_val + h
-        fxh1 = f(x)
+        fxh1 = f(x)  # self.loss(x, t) 의 실행 시점. 레퍼런스로 받은 x의 값이 변해 있다.
 
         x[idx] = tmp_val - h
         fxh2 = f(x)

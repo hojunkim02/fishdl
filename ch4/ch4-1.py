@@ -78,4 +78,7 @@ def cross_entropy_error_3(y, t):
         y = y.reshape(1, y.size)
 
     batch_size = y.shape[0]
+
+    # y[np.arrange(batch_size), t]는 배열 y에서 정답에 해당하는 레이블을 뽑아낸다.
+    # y는 확률의 형태로 나온 것이므로, 뽑힌 확률이 낮다면, 교차 엔트로피 오차가 높게 나온다.
     return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
