@@ -7,7 +7,6 @@ from collections import OrderedDict
 sys.path.append(os.getcwd())
 from common.layers import Affine, Relu, SoftmaxWithLoss
 
-
 # im2col, col2im 함수에 대해
 # 이미지-행렬 변환 함수들. 행렬 계산 최적화를 위해 만든 함수.
 # 3차원 데이터를 펼친 후 순서대로 붙여 2차원 데이터로 만든다.

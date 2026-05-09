@@ -28,7 +28,6 @@ from dataset.mnist import load_mnist
 from common.functions import *
 from network import TwoLayerNet
 
-
 # 샘플 데이터 다운로드
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
 

@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 sys.path.append(os.getcwd())
 from common.functions import sigmoid, relu
 
-
 x = np.random.randn(1000, 100)
 node_num = 100
 hidden_layer_size = 5

@@ -8,7 +8,6 @@ sys.path.append(os.getcwd())
 from common.functions import sigmoid, softmax
 from dataset.mnist import load_mnist
 
-
 # 이미 학습된 매개변수를 사용하여 학습 과정 없이 추론 과정만 구현
 # 이 추론 과정을 '순전파' (forward propagation)이라고 한다
 

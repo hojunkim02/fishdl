@@ -6,7 +6,6 @@ import numpy as np
 sys.path.append(os.getcwd())
 from dataset.mnist import load_mnist
 
-
 # 손실함수란: 신경망의 성능을 분석하기 위한 지표
 
 

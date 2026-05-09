@@ -9,7 +9,6 @@ from dataset.mnist import load_mnist
 from common.network import MultiLayerNet
 from common.optimizer import SGD
 
-
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True)
 x_train = x_train[:300]
 t_train = t_train[:300]

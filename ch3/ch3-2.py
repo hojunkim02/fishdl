@@ -6,7 +6,6 @@ import numpy as np
 sys.path.append(os.getcwd())
 from common.functions import sigmoid, identity_function
 
-
 # 퍼셉트론 복습
 # b + w1x1 + w2x2
 # 퍼셉트론이란: x1, x2와 같이 여러 가지 입력 값으로 하나의 결과값을 내는 논리 단위
